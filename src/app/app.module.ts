@@ -7,6 +7,8 @@ import { AddUserComponent } from './pages/admin/add-user/add-user.component';
 import { EmplListComponent } from './pages/employee/empl-list/empl-list.component';
 import { RolesComponent } from './pages/admin/roles/roles.component';
 import { SalaryComponent } from './pages/employee/salary/salary.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { SalaryComponent } from './pages/employee/salary/salary.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
